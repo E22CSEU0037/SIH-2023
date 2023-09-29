@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Background Pages</title>
+    <style>
+      /* Global CSS styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style for the container */
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Style for the background image */
+      .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      /* Style for the text */
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: 900;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Page-specific styles */
+      .page1 {
+        background-image: url("https://via.placeholder.com/800x600?text=Page+1");
+      }
+
+      .page2 {
+        background-image: url("https://via.placeholder.com/800x600?text=Page+2");
+      }
+
+      .page3 {
+        background-image: url("https://via.placeholder.com/800x600?text=Page+3");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page 1 -->
+    <div class="container page1">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/ananantexp.avif"
+        alt="Page 1 Image"
+      />
+      <a href="/templates/dist/anaant.html"><div class="text">ANANTNAG</div></a>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="container page2">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/dodaexp.jpg"
+        alt="Page 2 Image"
+      />
+      <a href="/templates/dist/doda.html"><div class="text">DODA</div></a>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="container page3">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/baramullaexp.jpg"
+        alt="Page 3 Image"
+      />
+      <a href="/templates/dist/bandipora.html"><div class="text">BARAMULLA</div></a>
+    </div>
+    <div class="container page3">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/bandipora.jpg"
+        alt="Page 3 Image"
+      />
+      <a href="/templates/dist/bandipora.html"><div class="text">BANDIPORA</div></a>
+
+    </div>
+    <div class="container page3">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/rajouri.jpg"
+        alt="Page 3 Image"
+      />
+      <a href="/templates/dist/rajouri.html"><div class="text">RAJOURI</div></a>
+    </div>
+    <div class="container page3">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/ganderbal.jpg"
+        alt="Page 3 Image"
+      />
+      <a href="/templates/dist/ganderbal.html"><div class="text">GANDERBAL</div></a>
+    </div>
+    <div class="container page3">
+      <img
+        class="background-image"
+        src="/static/images/explorefolder/jammu.jpg"
+        alt="Page 3 Image"
+      />
+      <a href="/templates/dist/jammu.html"><div class="text">JAMMU</div></a>
+    </div>
+  </body>
+</html>

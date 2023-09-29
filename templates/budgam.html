@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgam Store</title>
+    <link rel="icon" type="image/x-icon" href="./favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"><img   class="leftimg" src="logoodp1.jpg" width="100px" /></a>
+            <!-- <img
+              class="rightimg"
+              src="./logoodp.jpg"
+              width="400px"
+              height="90px"
+            /> -->
+          </div>
+          <nav>
+            <ul id="MenuItems">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="./account.html">Account</a></li>
+            </ul>
+          </nav>
+          <img src="./cart.png" width="30px" height="30px" />
+          <img src="./menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+ 
+
+    <div class="small-container">
+
+<div class="row row-2">
+    <h1>Budgam Products</h1>
+    <select>
+        <option value="">Default</option>
+        <option value="">price</option>
+        <option value="">age</option>
+        <option value="">popularity</option>
+        <option value="">Sale</option>
+    </select>
+</div>
+<hr color="black">
+      <!-- <h2 class="title">Featured Products</h2> -->
+      <div class="row">
+        <div class="col-4">
+          <a href="budgam1.html"><img src="./budgam_updated/budgam15.jpg" /></a>
+          <h4>Walnut</h4>
+          <div class="Rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <b> <p>₹169</p></b>
+        </div>
+        <div class="col-4">
+          <a href="budgam3.html"><img src="./budgam_updated/budgam10.jpg" /></a>
+          <h4>Walnut</h4>
+          <div class="Rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <b> <p>₹143</p></b>
+        </div>
+        <div class="col-4">
+          <a href="budgam5.html"><img src="./budgam_updated/budgam11.jpg" /></a>
+          <h4>Walnut</h4>
+          <div class="Rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <b> <p>₹130</p></b>
+        </div>
+        <div class="col-4">
+          <a href="budgam7.html"><img src="./budgam_updated/budgam5.jpg" /></a>
+          <h4>Walnut</h4>
+          <div class="Rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full" style="color: orange"></i>
+            <span class="fa fa-star"></span>
+            <!-- <span class="fa fa-star"></span> -->
+          </div>
+          <b> <p>₹170</p></b>
+        </div>
+        <div class="col-4">
+            <a href="budgam2.html"><img src="./budgam_updated/budgam3.jpg" /></a>
+            <h4>Kani Shawl</h4>
+            <div class="Rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <b> <p>₹402</p></b>
+          </div>
+          <div class="col-4">
+            <a href="budgam4.html"><img src="./budgam_updated/budgam13.jpg" /></a>
+            <h4>Kani Shawl</h4>
+            <div class="Rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <b> <p>₹150</p></b>
+          </div>
+          <div class="col-4">
+            <a href="budgam6.html"><img src="./budgam_updated/budgam7.jpg" /></a>
+            <h4>Kani Shawl</h4>
+            <div class="Rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <b> <p>₹180</p></b>
+          </div>
+          <div class="col-4">
+            <a href="budgam8.html"><img src="./budgam_updated/budgam8.jpg" /></a>
+            <h4>Kani Shawl</h4>
+            
+            <div class="Rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+           <b> <p>₹210</p></b>
+          </div>
+          
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+
+
+    
+    <!-- -------------------------footer---------------- -->
+
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="./play-store.png" />
+                <img src="./app-store.png" />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="./logoodp.jpg" height="80px" width="280px" />
+              <p>Download App for Android and ios mobile phone.</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Uswefull Links</h3>
+              <ul>
+                <li>Coupuns</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join a</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>facebook</li>
+                <li>InstaGram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .wrapper {
+        display: flex;
+      }
+       .wrapper .static-txt {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+      }
+      .wrapper .dynamic-txts {
+        margin-left: 15px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+      }
+      .dynamic-txts li {
+        list-style: none;
+        color: #000000;
+        font-size: 60px;
+        font-weight: 900;
+        position: relative;
+        top: 0;
+        animation: slide 3s steps(15) infinite;
+      } 
+      @keyframes slide {
+        100% {
+          top: -360px;
+        }
+      }
+      .dynamic-txts li span {
+        position: relative;
+        margin: 5px 0;
+        line-height: 90px;
+      }
+      /* .dynamic-txts li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 80%;
+        width: 1.5%;
+        background: rgb(1, 0, 0); 
+      } */
+        /* border-left: 2px solid #000000;
+        animation: typing 0s steps(5) infinite;
+      }
+      /* ==================================================================================================== */
+      @keyframes typing {
+        40%,
+        60% {
+          left: calc(100% + 30px);
+        }
+        100% {
+          left: 0;
+        }
+      }
+      .FRONTPARA{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+      }
+
+      .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+} */
+
+.dynamic-txts li {
+    list-style: none;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+    top: 0;
+    animation: slide 6s linear infinite; /* Change animation to linear */
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -90px; /* Adjust based on your text height */
+    }
+    50% {
+        top: -180px; /* Adjust based on your text height */
+    }
+    75% {
+        top: -270px; /* Adjust based on your text height */
+    }
+    100% {
+        top: -360px; /* Adjust based on your text height */
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/templates/index.html"
+              ><img class="leftimg" src="/static/images/logoodp1.jpg" width="100px"
+            /></a>
+            <!-- <img
+              class="rightimg"
+              src="./logoodp.jpg"
+              width="400px"
+              height="90px"
+            /> -->
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li class="hover-underline-animation">
+                <a href="/templates/index.html">Home</a>
+              </li>
+              <li class="hover-underline-animation">
+                <a href="/templates/products.html">Product</a>
+              </li>
+              <li class="hover-underline-animation"><a href="">About</a></li>
+              <li class="hover-underline-animation"><a href="">Contact</a></li>
+              <li class="hover-underline-animation">
+                <a href="/templates/account.html">Account</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/templates/cart.html"
+            ><img src="/static/images/cart.png" width="30px" height="30px"
+          /></a>
+          <img src="/static/images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 id="textH1">
+              <div class="wrapper">
+                <!--<div class="static-txt">I'm a</div> -->
+                <ul class="dynamic-txts">
+                  <li><span>Welcome</span></li>
+                  <li><span>اِستیقبال</span></li>
+                  <li><span>पैरिपे</span></li>
+                  <li><span>வரவேற்பு</span></li>
+                  <li><span>স্বাগত</span></li>
+                  <li><span>స్వాగతం</span></li>
+                </ul>
+              </div>
+              to ODOP J&K
+            </h1>
+            <p class="FRONTPARA">
+              JAMMU AND KASHMIR WELCOMES YOU TO TAKE A DIVE IN OUR RICH CULTURE AND HERITAGE. 
+              <BR>WE WANT TO SHARE OUR PRIDE WITH ALL OUR FELLOW CITIZENS.
+
+            </p>
+            <a href="newHtml.html" class="btn">Explore J&K &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img class="col2" src="/static/images/frontorange.jpg" />
+            <img class="col2" src="/static/images/frontpage3.jpg" />
+            <img class="col2" src="/static/images/3.png" />
+            <img class="col2" src="/static/images/2.png" />
+            <img class="col2" src="/static/images/4.png" />
+            <img class="col2" src="/static/images/5.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="whole">
+      <!-- ------------featured catagories-------- -->
+
+      <div class="categories">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-3">
+              <img
+                src="/static/images/WhatsApp Image 2023-09-21 at 21.12.40.jpg"
+                class="photos3"
+              />
+            </div>
+            <div class="col-3">
+              <img src="/static/images/jammukashmir2jpg.jpg" class="photos3" />
+            </div>
+            <div class="col-3">
+              <img src="/static/images/jammukashmir4jpg.jpg" class="photos3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------featured catagories-------- -->
+      <div class="small-container" id="frontpagedistrictpics">
+        <h2 class="title">DISTRICTS</h2>
+        <div class="row">
+          <div class="col-4" >
+            <a href="/templates/kathua.html"><img src="/static/images/kathua district/kathua2.jpg"/></a> 
+            <h4>Kathua District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+            <a href="/templates/anantnag.html"><img src="/static/images/anantnag_district/anantnag2.jpg" /></a>
+            <h4>AnantNag District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+           <a href="/templates/budgam.html"> <img src="/static/images/budgam_updated/budgam1.jpg" /></a>
+            <h4>Budgam District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+            <a href="/templates/jammu.html"><img src="/static/images/jammu updates/jammu2.png" /></a>
+            <h4>Jammu District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full" style="color: orange"></i>
+            <span class="fa fa-star"></span> -->
+              <!-- <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+        </div>
+        <!-- <h2 class="title">Featured Products</h2> -->
+        <div class="row">
+          <div class="col-4">
+            <a href="/templates/rajouri.html"><img src="/static/images/Rajouri/A-sweeping-view-of-Kashmir-Valle.jpg" /></a>
+            <h4>Rajouri District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+           <a href="/templates/srinagar.html"> <img src="/static/images/srinagar/OIP (8).jpg" /></a>
+            <h4>Srinagar District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+            <a href="/templates/shopian.html"><img src="/static/images/shopian/shopian-pic.jpg" /></a>
+            <h4>Shopian District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+          <div class="col-4">
+            <a href="/templates/baramulla.html"><img src="/static/images/BaraMulla/baramulla1.jpg" /></a>
+            <h4>BaraMulla District</h4>
+            <div class="Rating">
+              <!-- <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star-half-full" style="color: orange"></i>
+            <span class="fa fa-star"></span> -->
+            </div>
+            <!-- <p>$50.00</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- -----------------offer product--------- -->
+      <!-- <h2 class="title">Featured Products</h2> -->
+      <div class="offer">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-2">
+              <img src="/static/images/modibanner.jpg" class="offer-img" />
+            </div>
+            <div class="col-2">
+              <h1 class="offerprdct">आइए मिलकर निर्माण करें</h1>
+              
+              <!-- <a class="btn" id="offerbtn" hr ef="">Buy Now &#8594;</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------testinomial----------------------->
+
+      <div class="brands">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-5">
+              <img src="/static/images/govt1.jpg" />
+            </div>
+            <div class="col-5">
+              <img src="/static/images/govt6.jpg" height="160px" />
+            </div>
+            <div class="col-5">
+              <img src="/static/images/govt9.jpg" height="160px" />
+            </div>
+            <div class="col-5">
+              <img src="/static/images/govt7.png" />
+            </div>
+            <div class="col-5">
+              <img src="/static/images/govt4.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------footer---------------- -->
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="/static/images/play-store.png" />
+                <img src="/static/images/app-store.png" />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="/static/images/logoodp.jpg" height="80px" width="280px" />
+              <p>Download App for Android and ios mobile phone.</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Uswefull Links</h3>
+              <ul>
+                <li>Coupuns</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join a</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>facebook</li>
+                <li>InstaGram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2023</p>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------js for menu toggle---------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "600px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("col2");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1;
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
